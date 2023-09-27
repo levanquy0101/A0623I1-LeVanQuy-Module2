@@ -36,7 +36,6 @@ public class E2_StopWatch {
         System.out.println("Array before sort: ");
         System.out.println(Arrays.toString(arr));
         E2_StopWatch sw = new E2_StopWatch();
-//    Arrays.sort(arr);
         selectionSort(arr);
         sw.stop();
         System.out.println("Array after sort: ");
