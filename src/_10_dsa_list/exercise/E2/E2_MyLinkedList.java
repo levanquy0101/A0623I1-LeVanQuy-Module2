@@ -1,4 +1,4 @@
-package _10_dsa.exercise.E2;
+package _10_dsa_list.exercise.E2;
 
 public class E2_MyLinkedList<E> {
 
