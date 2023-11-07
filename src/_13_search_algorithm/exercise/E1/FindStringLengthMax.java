@@ -20,7 +20,9 @@ public class FindStringLengthMax {
         }
 
         System.out.println(Arrays.toString(charArray));
-        System.out.println(list);
+        for(Character s : list){
+            System.out.print(s);
+        }
 
     }
 }
