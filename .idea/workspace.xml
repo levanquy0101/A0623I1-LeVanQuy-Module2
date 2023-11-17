@@ -6,43 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc270800-d445-4672-915a-4e819a55afd2" name="Changes" comment="up">
       <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/controllers/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/BookingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/ContactService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/ContactServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/FacilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/FacilityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/Service.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/in.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/out.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_15_exception_debug/practice/P1_DebugAppJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_15_exception_debug/practice/P1_LinearEquationResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/E1/CopyFileText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/E1/fileone.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/E1/filetwo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/E2/Coutry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/E2/ReadFileCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/E2/coutry.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/P1/TotalNumberInFileText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/P1/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/P2/MaxValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/P2/num.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_17_BinaryFile_Serialization/exercise/OE2/CopyBinary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/controllers/FuramaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Villa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/E1/repository/ProductManager.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +69,36 @@
       <workItem from="1699776055379" duration="1772000" />
       <workItem from="1699782786832" duration="3441000" />
       <workItem from="1699859504501" duration="4364000" />
-      <workItem from="1699876779653" duration="3152000" />
+      <workItem from="1699876779653" duration="6636000" />
+      <workItem from="1700044584288" duration="99000" />
+      <workItem from="1700049634560" duration="5735000" />
+      <workItem from="1700206071761" duration="309000" />
     </task>
+    <task id="LOCAL-00001" summary="up">
+      <option name="closed" value="true" />
+      <created>1699882154152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699882154152</updated>
+    </task>
+    <task id="LOCAL-00002" summary="up">
+      <option name="closed" value="true" />
+      <created>1700050328110</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700050328110</updated>
+    </task>
+    <task id="LOCAL-00003" summary="up">
+      <option name="closed" value="true" />
+      <created>1700058323852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700058323852</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
