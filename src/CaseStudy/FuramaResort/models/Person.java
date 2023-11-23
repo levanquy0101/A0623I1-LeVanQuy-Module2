@@ -2,13 +2,13 @@ package CaseStudy.FuramaResort.models;
 
 public abstract class Person {
     private String name;
-    private  int date;
+    private  String date;
     private String sex;
     private int cmnd;
     private int phone;
     private String email;
 
-    public Person(String name, int date, String sex, int cmnd, int phone, String email) {
+    public Person(String name, String date, String sex, int cmnd, int phone, String email) {
         this.name = name;
         this.date = date;
         this.sex = sex;
@@ -25,11 +25,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -65,4 +65,15 @@ public abstract class Person {
         this.email = email;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", date='" + date + '\'' +
+                ", sex='" + sex + '\'' +
+                ", cmnd=" + cmnd +
+                ", phone=" + phone +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

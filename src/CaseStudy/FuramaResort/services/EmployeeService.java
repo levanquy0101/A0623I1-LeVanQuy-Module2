@@ -9,5 +9,5 @@ public interface EmployeeService extends Service{
 
     void addEmployee(Employee employee);
 
-    void editEmployee(Employee employee);
+    void editEmployee(Employee employee, Employee updateE);
 }

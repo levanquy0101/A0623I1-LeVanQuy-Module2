@@ -1,32 +1,31 @@
 package CaseStudy.FuramaResort.models;
 
 public class Customer extends Person {
-    private int IdCustomer;
-    private int CustomerType;
+    private int idCustomer;
+    private int customerType;
     private String address;
 
-
-    public Customer(String name, int date, String sex, int cmnd, int phone, String email, int idCustomer, int customerType, String address) {
+    public Customer(String name, String date, String sex, int cmnd, int phone, String email, int idCustomer, int customerType, String address) {
         super(name, date, sex, cmnd, phone, email);
-        IdCustomer = idCustomer;
-        CustomerType = customerType;
+        this.idCustomer = idCustomer;
+        this.customerType = customerType;
         this.address = address;
     }
 
     public int getIdCustomer() {
-        return IdCustomer;
+        return idCustomer;
     }
 
     public void setIdCustomer(int idCustomer) {
-        IdCustomer = idCustomer;
+        this.idCustomer = idCustomer;
     }
 
     public int getCustomerType() {
-        return CustomerType;
+        return customerType;
     }
 
     public void setCustomerType(int customerType) {
-        CustomerType = customerType;
+        this.customerType = customerType;
     }
 
     public String getAddress() {

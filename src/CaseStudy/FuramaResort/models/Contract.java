@@ -2,17 +2,17 @@ package CaseStudy.FuramaResort.models;
 
 public class Contract {
     private int numberConstract;
-    private int IdBooking;
+    private int idBooking;
     private int moneyFrontPile;
     private int totalAmount;
-    private int IdCustomer;
+    private int idCustomer;
 
     public Contract(int numberConstract, int idBooking, int moneyFrontPile, int totalAmount, int idCustomer) {
         this.numberConstract = numberConstract;
-        IdBooking = idBooking;
+        this.idBooking = idBooking;
         this.moneyFrontPile = moneyFrontPile;
         this.totalAmount = totalAmount;
-        IdCustomer = idCustomer;
+        this.idCustomer = idCustomer;
     }
 
     public int getNumberConstract() {
@@ -24,11 +24,11 @@ public class Contract {
     }
 
     public int getIdBooking() {
-        return IdBooking;
+        return idBooking;
     }
 
     public void setIdBooking(int idBooking) {
-        IdBooking = idBooking;
+        this.idBooking = idBooking;
     }
 
     public int getMoneyFrontPile() {
@@ -48,10 +48,10 @@ public class Contract {
     }
 
     public int getIdCustomer() {
-        return IdCustomer;
+        return idCustomer;
     }
 
     public void setIdCustomer(int idCustomer) {
-        IdCustomer = idCustomer;
+        this.idCustomer = idCustomer;
     }
 }

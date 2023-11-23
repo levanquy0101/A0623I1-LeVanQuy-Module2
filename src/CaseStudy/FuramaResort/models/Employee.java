@@ -1,26 +1,25 @@
 package CaseStudy.FuramaResort.models;
 
 public class Employee extends Person{
-    private int IdEmployee;
+    private int idEmployee;
     private String level;
     private String position;
     private int salary;
 
-
-    public Employee(String name, int date, String sex, int cmnd, int phone, String email, int idEmployee, String level, String position, int salary) {
+    public Employee(String name, String date, String sex, int cmnd, int phone, String email, int idEmployee, String level, String position, int salary) {
         super(name, date, sex, cmnd, phone, email);
-        IdEmployee = idEmployee;
+        this.idEmployee = idEmployee;
         this.level = level;
         this.position = position;
         this.salary = salary;
     }
 
     public int getIdEmployee() {
-        return IdEmployee;
+        return idEmployee;
     }
 
     public void setIdEmployee(int idEmployee) {
-        IdEmployee = idEmployee;
+        this.idEmployee = idEmployee;
     }
 
     public String getLevel() {
@@ -47,5 +46,20 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + getName() + '\'' +
+                ", date='" + getDate() + '\'' +
+                ", sex='" + getSex() + '\'' +
+                ", cmnd=" + getCmnd() +
+                ", phone=" + getPhone() +
+                ", email='" + getEmail() + '\'' +
+                ", idEmployee=" + idEmployee +
+                ", level='" + level + '\'' +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
+

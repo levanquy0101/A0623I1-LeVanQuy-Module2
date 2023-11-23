@@ -1,53 +1,21 @@
 package CaseStudy.FuramaResort.controllers;
 
+import CaseStudy.FuramaResort.models.Employee;
+import CaseStudy.FuramaResort.services.EmployeeService;
+import CaseStudy.FuramaResort.services.EmployeeServiceImpl;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
+import static CaseStudy.FuramaResort.views.DisplayMenu.displayMainMenu;
+
 public class FuramaController {
-    public static void main(String[] args) {
-        displayMainMenu();
+    private static EmployeeService employeeService = new EmployeeServiceImpl();
+    private static final String FILE_PATH = "D:\\Codegym\\A0623I1-LeVanQuy-Module2\\src\\CaseStudy\\FuramaResort\\data\\EmployeeCSV.csv";
+    public static void displayEmployeeManagementMenu() throws IOException {
 
-    }
-
-    public static void displayMainMenu() {
-        System.out.println("Main Menu:");
-        System.out.println("1. Employee Management");
-        System.out.println("2. Customer Management");
-        System.out.println("3. Facility Management");
-        System.out.println("4. Booking Management");
-        System.out.println("5. Promotion Management");
-        System.out.println("6. Exit");
-
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
-
-        switch (choice) {
-            case 1:
-                displayEmployeeManagementMenu();
-                break;
-            case 2:
-                displayCustomerManagementMenu();
-                break;
-            case 3:
-                displayFacilityManagementMenu();
-                break;
-            case 4:
-                displayBookingManagementMenu();
-                break;
-            case 5:
-                displayPromotionManagementMenu();
-                break;
-            case 6:
-                System.out.println("Exiting the program...");
-                System.exit(0);
-                break;
-            default:
-                System.out.println("Invalid choice! Please try again.");
-                displayMainMenu();
-                break;
-        }
-    }
-
-    public static void displayEmployeeManagementMenu() {
         System.out.println("Employee Management Menu:");
         System.out.println("1. Display list employees");
         System.out.println("2. Add new employee");
@@ -59,13 +27,48 @@ public class FuramaController {
 
         switch (choice) {
             case 1:
+
                 // Logic to display list of employees
+                List<Employee> employees = employeeService.getAllEmployees();
+                for (Employee employee : employees) {
+                    System.out.println(employee);
+                }
                 break;
             case 2:
                 // Logic to add a new employee
+                scanner.nextLine();
+                System.out.println("Nhập tên: ");
+                String name = scanner.nextLine();
+                System.out.println("Nhập ngày sinh: ");
+                String date = scanner.nextLine();
+                System.out.println("Nhập giới tính: ");
+                String sex = scanner.nextLine();
+                System.out.println("Nhập cmnd: ");
+                int cmnd = Integer.parseInt(scanner.nextLine());
+                System.out.println("Nhập số điện thoại: ");
+                int phone = Integer.parseInt(scanner.nextLine());
+                System.out.println("Nhập email: ");
+                String email = scanner.nextLine();
+                System.out.println("Nhập idEmployee: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                System.out.println("Nhập cấp bậc: ");
+                String level = scanner.nextLine();
+                System.out.println("Nhập position: ");
+                String position = scanner.nextLine();
+                System.out.println("Nhập lương: ");
+                int salary = Integer.parseInt(scanner.nextLine());
+                Employee newEmployee = new Employee(name, date, sex,cmnd, phone, email, id, level, position, salary);
+                employeeService.addEmployee(newEmployee);
+                System.out.println("Thêm nhân viên thành công!");
+                System.out.println("------------------------------");
+                write(newEmployee);
+
+                displayEmployeeManagementMenu();
                 break;
             case 3:
                 // Logic to edit an employee
+
+
                 break;
             case 4:
                 displayMainMenu();
@@ -77,7 +80,7 @@ public class FuramaController {
         }
     }
 
-    public static void displayCustomerManagementMenu() {
+    public static void displayCustomerManagementMenu() throws IOException {
         System.out.println("Customer Management Menu:");
         System.out.println("1. Display list customers");
         System.out.println("2. Add new customer");
@@ -107,7 +110,7 @@ public class FuramaController {
         }
     }
 
-    public static void displayFacilityManagementMenu() {
+    public static void displayFacilityManagementMenu() throws IOException {
         System.out.println("Facility Management Menu:");
         System.out.println("1. Display list facility");
         System.out.println("2. Add new facility");
@@ -137,7 +140,7 @@ public class FuramaController {
         }
     }
 
-    public static void displayBookingManagementMenu() {
+    public static void displayBookingManagementMenu() throws IOException {
         System.out.println("Booking Management Menu:");
         System.out.println("1. Add new booking");
         System.out.println("2. Display list booking");
@@ -175,7 +178,7 @@ public class FuramaController {
         }
     }
 
-    public static void displayPromotionManagementMenu() {
+    public static void displayPromotionManagementMenu() throws IOException {
         System.out.println("Promotion Management Menu:");
         System.out.println("1. Display list customers use service");
         System.out.println("2. Display list customers get voucher");
@@ -199,5 +202,12 @@ public class FuramaController {
                 displayPromotionManagementMenu();
                 break;
         }
+    }
+    private static void write(Employee employee) throws IOException {
+        FileWriter fileWriter = new FileWriter(FILE_PATH);
+        BufferedWriter buff =new BufferedWriter(fileWriter);
+        buff.write(employee.getName());
+        buff.flush();
+        buff.close();
     }
 }

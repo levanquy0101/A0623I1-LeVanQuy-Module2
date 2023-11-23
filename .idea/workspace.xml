@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc270800-d445-4672-915a-4e819a55afd2" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/controllers/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_17_BinaryFile_Serialization/exercise/OE2/CopyBinary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/data/EmployeeCSV.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/views/DisplayMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/controller/MobileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/data/mobile.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/model/MobileCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/model/MobileGenuine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/model/MobileModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/services/IdCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/services/MobileCellServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/services/MobileCellServicesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/services/MobileGenuineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/services/MobileGenuineServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/DienThoai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/DienThoaiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/DienThoaiView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/controllers/FuramaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/controllers/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FuramaResort/services/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/in.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_17_BinaryFile_Serialization/exercise/E1/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_BinaryFile_Serialization/exercise/E1/product.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +73,18 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Test" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +105,16 @@
       <workItem from="1699876779653" duration="6636000" />
       <workItem from="1700044584288" duration="99000" />
       <workItem from="1700049634560" duration="5735000" />
-      <workItem from="1700206071761" duration="309000" />
+      <workItem from="1700206071761" duration="824000" />
+      <workItem from="1700217720840" duration="10128000" />
+      <workItem from="1700229067321" duration="493000" />
+      <workItem from="1700229580451" duration="994000" />
+      <workItem from="1700483506871" duration="6707000" />
+      <workItem from="1700649787400" duration="8275000" />
+      <workItem from="1700659398595" duration="3656000" />
+      <workItem from="1700715090510" duration="8712000" />
+      <workItem from="1700725848875" duration="1850000" />
+      <workItem from="1700732365186" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <option name="closed" value="true" />
@@ -98,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700058323852</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="up">
+      <option name="closed" value="true" />
+      <created>1700206633008</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700206633008</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
