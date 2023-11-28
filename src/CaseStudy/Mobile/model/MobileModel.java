@@ -3,7 +3,7 @@ package CaseStudy.Mobile.model;
 public abstract class MobileModel {
     private int id;
     private String name;
-    private int price;
+    private double price;
     private String producer;
 
     public int getId() {
@@ -22,7 +22,7 @@ public abstract class MobileModel {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 

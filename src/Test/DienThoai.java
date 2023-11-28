@@ -11,9 +11,6 @@ public class DienThoai {
     private String quocGia;
     private String trangThai;
 
-    // Constructor, getters, setters
-
-
     public int getId() {
         return id;
     }

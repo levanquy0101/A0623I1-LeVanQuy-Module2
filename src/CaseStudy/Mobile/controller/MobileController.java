@@ -13,44 +13,58 @@ public class MobileController {
     private static final String FILE_PATH = "D:\\Codegym\\A0623I1-LeVanQuy-Module2\\src\\CaseStudy\\Mobile\\data\\mobile.csv";
 
     private static MobiService mobiService = new MobiService();
+
     public static void main(String[] args) throws IOException {
-       menuMobile();
+        menuMobile();
     }
+
     public static void menuMobile() throws IOException {
         Scanner sc = new Scanner(System.in);
-        do{
-            System.out.println("----------MENU PHONE---------");
-            System.out.println("1. Thêm mới điện thoại");
-            System.out.println("2. Hiển thị danh sách điện thoại");
-            System.out.println("3. Xóa điện thoại ra khỏi danh sách");
-            System.out.println("4. Tìm kiếm điện thoại theo tên");
-            System.out.println("5. Thoát");
-            int choice = sc.nextInt();
-            switch (choice){
-                case 1:
-                    addMobile();
-                    break;
-                case 2:
-                    System.out.println("-----------------------------------------------------------------");
-                    mobiService.WriteMoblie(FILE_PATH,mobiService);
-                    displayMobileG();
-                    displayMobileC();
-                    System.out.println("-----------------------------------------------------------------");
-                    break;
-                case 3:
-                    System.out.println("-------XÓA ĐIỆN THOẠI------");
-                    System.out.println("Nhập id cần xóa: ");
-                    int inputID = sc.nextInt();
-                    mobiService.delete(inputID);
-                    break;
-                case 4:
 
-                    break;
-                case 5:
-                    System.exit(0);
-            }
-        }while (true);
-    }
+            do {
+                System.out.println("----------MENU PHONE---------");
+                System.out.println("1. Thêm mới điện thoại");
+                System.out.println("2. Hiển thị danh sách điện thoại");
+                System.out.println("3. Xóa điện thoại ra khỏi danh sách");
+                System.out.println("4. Tìm kiếm điện thoại theo tên");
+                System.out.println("5. Thoát");
+                int choice = Integer.parseInt(sc.nextLine());
+
+                switch (choice) {
+                    case 1:
+                        addMobile();
+                        break;
+                    case 2:
+                        System.out.println("-----------------------------------------------------------------");
+
+//                    displayMobileG();
+//                    displayMobileC();
+                        //  mobiService.sortMobile();
+                        // displayALl();
+                        mobiService.sortByPrice().forEach(System.out::println);
+
+                        mobiService.WriteMoblie(FILE_PATH, mobiService);
+                        System.out.println("-----------------------------------------------------------------");
+                        break;
+                    case 3:
+                        System.out.println("-------XÓA ĐIỆN THOẠI------");
+                        System.out.println("Nhập id cần xóa: ");
+                        int inputID = Integer.parseInt(sc.nextLine());
+                        mobiService.delete(inputID);
+                        break;
+                    case 4:
+                        System.out.println("-----TÌM KIẾM ĐIỆN THOẠI------");
+                        System.out.println("Nhập tên cần tìm kiếm: ");
+                        String fName = sc.nextLine();
+                        mobiService.findByName(fName).forEach(System.out::println);
+                        break;
+                    case 5:
+                        System.exit(0);
+                }
+
+            } while (true);
+        }
+
     public static void addMobile() throws IOException {
         Scanner sc = new Scanner(System.in);
         do {
@@ -59,10 +73,9 @@ public class MobileController {
             System.out.println("2. Điện thoại xách tay");
             System.out.println("3. Trở về MENU điện thoại");
             int select = Integer.parseInt(sc.nextLine());
-            switch (select){
+            switch (select) {
                 case 1:
                     System.out.println("-----Thêm điện thoại chính hãng------");
-//                    int idPhone1 = serviceG.getID();
                     System.out.println("Nhập tên điện thoại thêm vào: ");
                     String name1 = sc.nextLine();
                     System.out.println("Nhập giá sản phẩm: ");
@@ -73,10 +86,10 @@ public class MobileController {
                     String warrantPeriod1 = sc.nextLine();
                     System.out.println("Nhập mã số bảo hành: ");
                     int warrantyCode1 = Integer.parseInt(sc.nextLine());
-                    MobileGenuine mG = new MobileGenuine(0,name1,price1,producer1,warrantPeriod1,warrantyCode1);
+                    MobileGenuine mG = new MobileGenuine(0, name1, price1, producer1, warrantPeriod1, warrantyCode1);
                     mobiService.save(mG);
-
                     displayMobileG();
+                    mobiService.WriteMoblie(FILE_PATH, mobiService);
                     break;
                 case 2:
                     System.out.println("-----Thêm điện thoại xách tay------");
@@ -90,15 +103,15 @@ public class MobileController {
                     String coutry2 = sc.nextLine();
                     System.out.println("Nhập tình trạng điện thoại: ");
                     String status2 = sc.nextLine();
-                    MobileCell mC = new MobileCell(0,name2,price2,producer2,coutry2,status2);
+                    MobileCell mC = new MobileCell(0, name2, price2, producer2, coutry2, status2);
                     mobiService.save(mC);
                     displayMobileC();
-
+                    mobiService.WriteMoblie(FILE_PATH, mobiService);
                     break;
                 case 3:
                     menuMobile();
             }
-        }while (true);
+        } while (true);
     }
     public static void displayMobileG(){
         System.out.println("Hiển thị danh sách điện thoại chính hãng: ");
@@ -118,6 +131,13 @@ public class MobileController {
                 System.out.println(c);
             }
         }
-    }
+      }
 
+    public static void displayALl(){
+        System.out.println("-----Danh sách tất cả điện thoại-----");
+        List<MobileModel> modelList = mobiService.findAll();
+        for(MobileModel mobileModel:modelList){
+            System.out.println(mobileModel);
+        }
+    }
 }
