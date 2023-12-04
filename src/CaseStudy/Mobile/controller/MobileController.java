@@ -1,5 +1,6 @@
 package CaseStudy.Mobile.controller;
 
+import CaseStudy.Mobile.exception.NotFoundPhoneException;
 import CaseStudy.Mobile.model.MobileCell;
 import CaseStudy.Mobile.model.MobileGenuine;
 import CaseStudy.Mobile.model.MobileModel;
@@ -20,7 +21,7 @@ public class MobileController {
 
     public static void menuMobile() throws IOException {
         Scanner sc = new Scanner(System.in);
-
+        try {
             do {
                 System.out.println("----------MENU PHONE---------");
                 System.out.println("1. Thêm mới điện thoại");
@@ -32,7 +33,12 @@ public class MobileController {
 
                 switch (choice) {
                     case 1:
-                        addMobile();
+                        try {
+                            addMobile();
+                        } catch (NumberFormatException e) {
+                            System.out.println("Nhập Sai Định Dạng" + e);
+                            addMobile();
+                        }
                         break;
                     case 2:
                         System.out.println("-----------------------------------------------------------------");
@@ -47,10 +53,7 @@ public class MobileController {
                         System.out.println("-----------------------------------------------------------------");
                         break;
                     case 3:
-                        System.out.println("-------XÓA ĐIỆN THOẠI------");
-                        System.out.println("Nhập id cần xóa: ");
-                        int inputID = Integer.parseInt(sc.nextLine());
-                        mobiService.delete(inputID);
+                        delete();
                         break;
                     case 4:
                         System.out.println("-----TÌM KIẾM ĐIỆN THOẠI------");
@@ -63,7 +66,11 @@ public class MobileController {
                 }
 
             } while (true);
+        } catch (Exception e) {
+            System.out.println("Lỗi: ");
+            menuMobile();
         }
+    }
 
     public static void addMobile() throws IOException {
         Scanner sc = new Scanner(System.in);
@@ -113,31 +120,51 @@ public class MobileController {
             }
         } while (true);
     }
-    public static void displayMobileG(){
+
+    public static void displayMobileG() {
         System.out.println("Hiển thị danh sách điện thoại chính hãng: ");
         List<MobileModel> mobileGenuineList = mobiService.findAll();
         for (MobileModel listAllG : mobileGenuineList) {
-            if(listAllG instanceof MobileGenuine g){
+            if (listAllG instanceof MobileGenuine g) {
                 System.out.println(g);
             }
         }
 
     }
-    public static void displayMobileC(){
+
+    public static void displayMobileC() {
         System.out.println("Hiển thị danh sách điện thoại xách tay: ");
         List<MobileModel> mobileCellList = mobiService.findAll();
         for (MobileModel listAllC : mobileCellList) {
-            if(listAllC instanceof MobileCell c){
+            if (listAllC instanceof MobileCell c) {
                 System.out.println(c);
             }
         }
-      }
+    }
 
-    public static void displayALl(){
+    public static void displayALl() {
         System.out.println("-----Danh sách tất cả điện thoại-----");
         List<MobileModel> modelList = mobiService.findAll();
-        for(MobileModel mobileModel:modelList){
+        for (MobileModel mobileModel : modelList) {
             System.out.println(mobileModel);
         }
+    }
+
+    public static void delete() {
+        Scanner sc = new Scanner(System.in);
+
+        boolean check;
+        do {
+            System.out.println("-------XÓA ĐIỆN THOẠI------");
+            System.out.println("Nhập id cần xóa: ");
+            int inputID = Integer.parseInt(sc.nextLine());
+            try {
+                check = true;
+                mobiService.delete(inputID);
+            } catch (NotFoundPhoneException e) {
+                System.err.print(e.getMessage()+"\n");
+                check = false;
+            }
+        } while (!check);
     }
 }

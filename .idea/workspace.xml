@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc270800-d445-4672-915a-4e819a55afd2" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Book/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Book/data/BookAll.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Book/model/BookModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Book/model/Magazine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Book/model/Textbook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Book/seveices/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Book/seveices/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/exception/NotFoundPhoneException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/Mobile/controller/MobileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/controller/MobileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/Mobile/data/mobile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/data/mobile.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Mobile/model/MobileModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/model/MobileModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/Mobile/services/MobiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Mobile/services/MobiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Phone/controller/PhoneController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Phone/model/PhoneModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Phone/seveices/PhoneService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Phone/seveices/PhoneServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/DienThoai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/DienThoai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +125,16 @@
       <workItem from="1701146843963" duration="7567000" />
       <workItem from="1701161008736" duration="5894000" />
       <workItem from="1701171968185" duration="2041000" />
-      <workItem from="1701174962635" duration="1318000" />
+      <workItem from="1701174962635" duration="3733000" />
+      <workItem from="1701233501229" duration="631000" />
+      <workItem from="1701245780235" duration="220000" />
+      <workItem from="1701246458739" duration="417000" />
+      <workItem from="1701247217449" duration="283000" />
+      <workItem from="1701258847308" duration="210000" />
+      <workItem from="1701259142253" duration="11262000" />
+      <workItem from="1701321635247" duration="1742000" />
+      <workItem from="1701335001032" duration="153000" />
+      <workItem from="1701668707667" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <option name="closed" value="true" />
@@ -187,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701070383585</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="up">
+      <option name="closed" value="true" />
+      <created>1701176449169</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701176449169</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
